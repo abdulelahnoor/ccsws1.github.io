@@ -1,0 +1,274 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+*::-webkit-scrollbar{
+    display: block;
+    width: 0.4rem;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+*::-webkit-scrollbar-thumb{
+    display: block;
+    width: 0.4rem;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+nav{
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 .3rem .3rem rgba(0, 0, 0, .1);
+}
+nav img{
+    height: 5rem;
+}
+nav li{
+    display: inline;
+    vertical-align: middle;
+    margin: 2rem;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+#landing{
+    padding: 3rem;
+    text-align: center;
+}
+#landing img{
+    display: inline;
+    height: 40rem;
+    vertical-align: middle;
+}
+#landing #title{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    max-width: 25rem;
+}
+
+#section1{
+    background-color: rgb(166, 207, 255);
+    text-align: center;
+}
+#section1 h1{
+    text-decoration: underline;
+    margin-bottom: 3rem;
+}
+#section1 li{
+    display: inline-block;
+}
+#section1 ul img{
+    height: 20rem;
+    margin: 2rem;
+}
+
+#section2{
+    text-align: center;
+    padding-bottom: 2rem;
+}
+#section2 h1{
+    text-decoration: underline;
+    margin-bottom: 3rem;
+}
+.course{
+    display: inline-block;
+    position: relative;
+    max-width: 20rem;
+    text-align: left;
+    margin: 3rem;
+}
+.course:hover .thumbnail{
+    filter: brightness(0.9);
+}
+.course .thumbnail{
+    position: relative;
+    width: 20rem;
+    border: .1rem rgba(0, 0, 0, 0.2) solid;
+}
+.ujcourse::before{
+    content: "";
+    background-image: url("assets/UJlogo.png");
+    position: absolute;
+    height: 2rem;
+    width: 2rem;
+    background-size: 2rem 2rem;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.kaucourse::before{
+    content: "";
+    background-image: url("assets/KAUlogo.png");
+    position: absolute;
+    height: 2rem;
+    width: 2rem;
+    background-size: 2rem 2rem;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+#section3{
+    padding: 3rem;
+    text-align: center;
+    text-decoration: underline;
+    background-color: whitesmoke;
+}
+
+#section3 h1{
+    margin-bottom: 3rem;
+}
+
+#section3 li{
+    display: inline;
+    margin: 2rem;
+}
+
+#section3 img{
+    height: 8rem;
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.87);
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 0.5rem;
+    color: gray;
+}
+footer img{
+    height: 10rem;
+}
+footer ul{
+    margin: 2rem;
+}
+footer li{
+    display: inline;
+    margin: 1rem;
+}
+footer li img{
+    height: 2rem;
+    width: 2rem;
+}
+
+#active_nav{
+    color: #1695cb;
+}
+#auland{
+    padding: 3rem;
+    text-align: center;
+}
+#auland img{
+    width: 25rem;
+    margin: 2rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+#auland div{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    max-width: 25rem;
+}
+
+#auvision{
+    padding: 3rem;
+    text-align: center;
+}
+#auvision img{
+    width: 25rem;
+    margin: 2rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+#auvision div{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    max-width: 25rem;
+}
+
+#aumission{
+    padding: 3rem;
+    text-align: center;
+}
+#aumission img{
+    width: 25rem;
+    margin: 2rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+#aumission div{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    max-width: 25rem;
+}
+
+#contactus{
+    padding: 3rem;
+    text-align: center;
+    margin: 12rem;
+}
+
+#contactus img{
+    width: 30rem;
+    margin: 2rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+#contactus div{
+    display: inline-flex;
+    vertical-align: middle;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30rem;
+}
+#contactus form{
+    width: 60%;
+    text-align: left;
+}
+#contactus input{
+    display: block;
+    width: 100%;
+    height: 1.5rem;
+    border: 1px #9f9f9f solid;
+    border-radius: 0;
+}
+#contactus label{
+    display: block;
+    margin-top: 1rem;
+}
+#contactus button[type="submit"]{
+    margin-top: 1rem;
+    border: 1px #9f9f9f solid;
+    background-color: #0f6387;
+    color: whitesmoke;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+}
+#contactus button[type="submit"]:hover{
+    cursor: pointer;
+}
+#contactus textarea{
+    display: block;
+    width: 100%;
+    height: 5rem;
+    border: 1px #9f9f9f solid;
+    resize: none;
+    border-radius: 0;
+}
+#contactus input:focus-visible{
+    outline-color:#9f9f9f;
+}
+#contactus textarea:focus-visible{
+    outline-color:#9f9f9f;
+}
+
+#courses{
+    text-align: center;
+    padding: 4rem 0;
+}
